@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Bodyforum.com</title>
+        <meta name="description" content="Polskie forum dyskusyjne dotyczące kulturystyki i wszystkiego co z nią związane" />
+        <meta name="keywords" content="bodybuilding,mr.olympia,arnold,schwarzengger,ronnie,colman,tdee calculator"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="../CSS,JS/style.css" type="text/css"/>
+        <script src="../CSS,JS/jquery-3.6.3.min.js"></script>
+    </head>
+    <body>
+       <header>
+        <div id="header">
+            <div id="logo"><img src="../img/db.png">Bodyforum</div>            
+            <div class="signin">
+                <div class="user"><a href="#">Witaj,użytkownik</a></div>
+                <div class="user_pic"><img src="../img/arnold.jpg"></div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+       </header>
+       <nav>
+        <div class="nav">
+            <ol>
+                <li><a href="index-Z.html">Strona główna</a></li>
+                <li><a href="#">Historia kulturystyki</a>
+                    <ul>
+                        <li><a href="brazowaera.html">Brązowa era</a></li>
+                        <li><a href="srebrnaera.html">Srebrna era</a></li>
+                        <li><a href="zlotaera.html">Złota era</a></li>
+                        <li><a href="haneyera.html">Era Haney'a</a></li>
+                        <li><a href="massera.html">Mass era</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Narzędzia</a>
+                    <ul>
+                        <!--I NEED TO LEARN JS FOR THIS--><li><a href="podstrony/kalkulatorbmi.html">Kalkulator BMI</a></li>
+                         <!--I NEED TO LEARN JS FOR THIS--><li><a href="#">Kalkulator TDEE</a></li>
+                         <!--I NEED TO LEARN JS FOR THIS--><li><a href="#">Kalkulator poziomu tłuszczu</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ol>
+        </div>
+       </nav>
+       <main>
+        <div id="wrapper"> 
+            <div id="content">
+                <article>
+                    <header>
+                        <h1>Srebrena era kulturystyki</h1>
+                    </header>
+                    <p>Srebrna Era (1940-1959) - Tak jak nie ma wątpliwości, że Brązowa Era zaczęła się od Eugena Sandowa, tak samo można powiedzieć o Srebrnej Erze i Johnie Grimku. Sandow był strongmanem zanim został kulturystą, a Grimek był ciężarowcem zanim został kulturystą i nawet startował w Olimpiadzie w 1936 roku dla USA. Grimek zadebiutował na scenie kulturystycznej, kiedy wygrał konkurs AAU Mr. America w 1940 roku. Nikt nie widział wcześniej kulturysty o takich rozmiarach i kształcie jak Grimek. Wygrał konkurs AAU Mr. America ponownie w 1941 roku powodując, że AAU stworzyło zasadę, w której poprzedni zwycięzca Mr. America nie mógł startować w przyszłych konkursach. Grimek będzie konkurować z 1940-1949 i nigdy nie został pokonany. Do dziś pozostaje on jedynym niepokonanym kulturystą, który brał udział w najważniejszych zawodach. W okresie Srebrnej Ery kulturystyka odnotowała umiarkowany wzrost popularności, ponieważ siłownie stały się bardziej powszechne, a wiele konkursów było organizowanych co roku. Zainteresowanie kulturystyką przyspieszyło pod koniec lat 50-tych, kiedy Steve Reeves pojawił się w filmach jako Herkules, a młodzi chłopcy, którzy go podziwiali, zaczęli podnosić ciężary, aby osiągnąć jego wygląd. Trening siłowy awansował do wyższych powtórzeń, aby stymulować mięśnie do wzrostu zamiast siły i typowy trening był wykonywany na całym ciele. Dieta miała skromny postęp w unikaniu przetworzonej żywności i cukru, ale w czasie II wojny światowej z racjonowaniem w efekcie kulturyści jedli to, co mogli znaleźć. Należy zauważyć, że po II wojnie światowej większość Amerykanów miała niedowagę, więc unikanie tłuszczu nie było tak dużym problemem. Sterydy stałyby się dostępne w 1958 roku wraz z utworzeniem Dianabolu przez dr Johna Zieglera, chociaż ogólnie przyjmuje się, że kulturyści nie zaczęli brać sterydów do początku lat 60-tych. Styl życia kulturystów zaczynał być coraz bardziej określony, ponieważ wskazówki dotyczące ćwiczeń i diety były rozpowszechniane w różnych magazynach mięśniowych tego dnia. Godni uwagi kulturyści z tego okresu to John Grimek, Steve Reeves, Reg Park, Clarence Ross, Alan Stephan, George Eiferman i Armand Tanny.<p>  
+                        <figure><img src="../img/se.jpg"></figure>
+                        <figcaption>John Grimek</figcaption>                 
+                </article>
+            </div>
+        </div>
+        <sidebar>
+            <div class="ad">
+                <img src="../img/ad.jpg">
+            </div>
+        </sidebar>
+        <div style="clear: both;"></div>
+        </div>
+       </main>
+       <footer>
+            <div class="footer"style="margin-bottom:10px;">Bodyforum.com - Forum poświęcone kulturystyce i wszystkiemu co związane z trenigniem siłowym &copy; Wszelkie prawa zastrzeżone. 2023
+
+            </div>
+       </footer>
+    
+       <script>	
+        $(document).ready(function() {
+        var NavY = $('.nav').offset().top;
+         
+        var stickyNav = function(){
+        var ScrollY = $(window).scrollTop();
+              
+        if (ScrollY > NavY) { 
+            $('.nav').addClass('sticky');
+        } else {
+            $('.nav').removeClass('sticky'); 
+        }
+        };
+         
+        stickyNav();
+         
+        $(window).scroll(function() {
+            stickyNav();
+        });
+        });
+        
+        </script>
+    </body>
+</html>
